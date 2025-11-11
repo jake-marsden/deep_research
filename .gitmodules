@@ -1,9 +1,12 @@
 [submodule "deep_research_bench"]
 	path = deep_research_bench
 	url = https://github.com/jake-marsden/deep_research_bench
+	branch = thesis-dev
 [submodule "open_deep_research"]
 	path = open_deep_research
 	url = https://github.com/jake-marsden/open_deep_research
+	branch = thesis-dev
 [submodule "open_deep_research_gensee"]
 	path = open_deep_research_gensee
 	url = https://github.com/jake-marsden/open_deep_research_gensee
+	branch = thesis-dev

@@ -8,15 +8,12 @@ cd open_deep_research
 2. Create a virtual environment and install dependencies
 ```
 uv venv
+source .venv/bin/activate
 uv pip install -r pyproject.toml
+uv sync
 ```
 
-3. Generate answers to `deep_research_bench`
-```
-python tests/run_evaluate.py
-```
-
-4. Configure system in `run_evaluate.py` (`open_deep_research` or `ROFC`)
+3. Configure system in `run_evaluate.py` (`open_deep_research` or `ROFC`)
 ```
 # System selection: Switch between 'open_deep_research' and 'rofc'
 SYSTEM_TO_EVALUATE = "open_deep_research"  # Options: "open_deep_research" or "rofc"
@@ -27,7 +24,7 @@ else:
     from open_deep_research.deep_researcher import deep_researcher_builder
 ```
 
-5. Configure models in `run_evaluate.py`
+4. Configure models in `run_evaluate.py`
 ```
 # NOTE: Configure the right dataset and evaluators
 dataset_name = "Deep Research Bench"
@@ -47,6 +44,11 @@ compression_model = "openai:gpt-4.1"
 compression_model_max_tokens = 10000
 final_report_model = "openai:gpt-4.1"
 final_report_model_max_tokens = 10000
+```
+
+5. Generate answers to `deep_research_bench`
+```
+python tests/run_evaluate.py
 ```
 
 6. Extract the results

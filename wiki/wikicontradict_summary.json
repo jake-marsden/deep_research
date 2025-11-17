@@ -1,0 +1,21 @@
+{
+  "total_instances": 2,
+  "instances_limit": 2,
+  "full_evaluation": false,
+  "template4": {
+    "correct": 0,
+    "partially_correct": 2,
+    "incorrect": 0,
+    "correct_pct": 0.0,
+    "partially_correct_pct": 100.0,
+    "incorrect_pct": 0.0
+  },
+  "template5": {
+    "correct": 1,
+    "partially_correct": 1,
+    "incorrect": 0,
+    "correct_pct": 50.0,
+    "partially_correct_pct": 50.0,
+    "incorrect_pct": 0.0
+  }
+}
